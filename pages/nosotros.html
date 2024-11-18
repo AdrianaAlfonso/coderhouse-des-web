@@ -6,6 +6,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <script
+      src="https://kit.fontawesome.com/b9fbd9565a.js"
+      crossorigin="anonymous"></script>
 
     <title>Nosotros</title>
   </head>
@@ -14,38 +22,50 @@
     <!-- Cuerpo -->
     <header>
       <!-- Encabezado - Menu de Navegacion -->
-      <nav>
-        <a href="../index.html" id="logo-header">
-          <!-- Logo a Inicio -->
-          <img src="../img/logoSinFondo.png" alt="Logo" />
-        </a>
-
-        <h1>El Teatrino</h1>
-
-        <div class="boton-busqueda">
-          <!-- Barra de busqueda-->
-          <form class="boton-busqueda-form" action="#" method="post">
-            <input type="search" placeholder="Buscar" />
-          </form>
+      <nav class="d-flex">
+        <div class="d-flex nav-izquierda align-items-center">
+          <a href="../index.html" class="position-relative">
+            <!-- Logo a Inicio -->
+            <img src="../img/logoSinFondo.png" alt="Logo" />
+          </a>
         </div>
 
-        <a href="https://">
-          <!-- Carrito -->
-          <img src="../img/carrito.png" alt="carrito" />
-        </a>
+        <div class="d-flex flex-column justify-content-between w-50 pt-4">
+          <div class="d-flex w-100 flex-column flex-md-row align-items-end">
+            <div class="boton-busqueda w-100">
+              <!-- Barra de busqueda-->
+              <form class="boton-busqueda-form" action="#" method="post">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Buscar" />
+              </form>
+            </div>
 
-        <ul id="nav-secciones">
-          <!--- Secciones -->
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="./cartelera.html">CARTELERA</a></li>
-          <li><a href="./escuela.html">ESCUELA</a></li>
-          <li><a href="./tienda.html">TIENDA</a></li>
-        </ul>
+            <div class="boton-carrito-container">
+              <a href="#">
+                <!-- Carrito -->
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+
+          <ul class="d-none d-md-flex justify-content-between roboto-bold">
+            <!--- Secciones -->
+            <li><a href="./nosotros.html">NOSOTROS</a></li>
+            <li><a href="./cartelera.html">CARTELERA</a></li>
+            <li><a href="./escuela.html">ESCUELA</a></li>
+            <li><a href="./tienda.html">TIENDA</a></li>
+          </ul>
+        </div>
       </nav>
+      <div class="nav-image-container">
+        <img src="../img/no-image.png" alt="Teatro" />
+      </div>
     </header>
 
-    <main class="nosotros-contenedor">
-      <section id="nosotros-historia">
+    <main>
+      <section>
         <h2>HISTORIA</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
@@ -62,62 +82,100 @@
           deserunt placeat! Sapiente, libero error.
         </p>
       </section>
-      <section id="nosotros-fundadores">
+      <section class="carousel-section">
         <h2>FUNDADORES</h2>
-        <img src="../img/no-image.png" alt="Logo" />
+        <div id="mi-carrucel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/no-image.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/no-image.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/no-image.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mi-carrucel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mi-carrucel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="d-flex container-fluid pt-4">
       <!-- Pie -->
-      <nav>
-        <section>
-          <div>
-            <a href="#" id="logo-footer">
-              <img src="../img/logoFondoNegro.png" alt="Logo" />
-            </a>
-            <h1>El Teatrino</h1>
-          </div>
+      <section class="d-flex flex-column footer-izquierda">
+        <div class="d-flex align-items-center logo-footer">
+          <a href="../index.html">
+            <img src="../img/logoSinFondo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="redes">
+          <!-- Redes sociales -->
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://web.whatsapp.com" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
 
-          <div id="redes-footer">
-            <!-- Redes sociales -->
+      <section class="">
+        <h2 class="fs-5 roboto-bold">CONTACTANOS</h2>
 
-            <a href="https://instagram.com">
-              <img src="../img/instagram.png" alt="Instagram" />
-            </a>
-            <a href="https://facebook.com">
-              <img src="../img/facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://youtube.com">
-              <img src="../img/youtube.png" alt="Youtube" />
-            </a>
-            <a href="https://tiktok.com">
-              <img src="../img/tiktok.png" alt="Tiktok" />
-            </a>
-            <a href="https://web.whatsapp.com" target="_blank">
-              <img src="../img/whatsapp.png" alt="whatsapp" />
-            </a>
-          </div>
-        </section>
-
-        <section id="contactanos">
-          <h2>CONTACTANOS</h2>
-
-          <form action="/submit" method="post">
+        <form method="post">
+          <div class="form-grid">
             <div>
-              <input type="text" placeholder="Nombre" />
-              <input type="email" placeholder="Mail" />
-              <input type="text" placeholder="Numero de contacto" />
+              <input type="text" class="form-control" placeholder="Nombre" />
+              <input type="email" class="form-control" placeholder="Mail" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Numero de contacto" />
             </div>
             <div>
-              <input type="search" placeholder="Asunto" />
-              <input type="search" placeholder="Mensaje" />
+              <input type="text" class="form-control" placeholder="Asunto" />
+              <textarea
+                name="mensaje"
+                class="form-control"
+                placeholder="Mensaje"></textarea>
             </div>
-            <div><input type="submit" /></div>
-            <!-- boton enviar-->
-          </form>
-        </section>
-      </nav>
+          </div>
+          <!-- boton enviar-->
+          <div class="mt-2 d-flex justify-content-end">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
   </body>
 </html>
