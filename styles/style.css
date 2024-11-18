@@ -5,109 +5,312 @@
 }
 
 body {
-  margin: 80px;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 ul {
   list-style: none;
 }
 
-
-h2 {
-  color: grey;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+.roboto-thin {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-h3 {
-  color: black;
-  font-size: 24px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+header nav {
+  height: 8em;
+  background-color: white;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+.nav-izquierda,
+.footer-izquierda {
+  width: 50%;
+  padding-left: 3em;
+}
+
+nav .nav-izquierda a {
+  top: 80px;
+}
+
+.nav-izquierda a {
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 50%;
+}
+
+.footer-izquierda a {
+  width: 250px;
+  height: 250px;
+  color: white;
+}
+
+.logo-footer a {
+  background: white;
+  border-radius: 50%;
+}
+
+.nav-izquierda img,
+.footer-izquierda img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .titulo-principal {
-  color: black;
-  font-size: 60px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-#nav-secciones {
-  display: flex;
-  gap: 20px;
+.nav-derecha {
+  padding-top: 2em;
+  width: 50%;
+  height: 100%;
+  padding-right: 5rem;
 }
-
-#nav-secciones a {
-  color: black;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+.nav-derecha ul {
+  padding-left: 0;
+}
+.nav-derecha a {
   text-decoration: none;
-  display: flex;
+  color: #333;
 }
 
-#logo-header img, #logo-footer img  {
-  width: 300px;
+.boton-carrito-container {
+  font-size: 2rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.nav-image-container {
   height: 300px;
+  background-color: brown;
 }
 
-#redes-footer img {
-  width: 50px;
-  height: 50px;
-}
-
-main img {
-  width: 1000px;
-  object-fit: fill;
-}
-
-iframe {
-  width: 1000px;
+.nav-image-container img,
+.section-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 footer {
-  width: 1000px;
-  background-color: grey;
+  background-color: rgb(226, 226, 226);
+  width: 100%;
 }
 
-header {
-  width: 1000px;
-  background-color: grey;
+.footer-izquierda .redes {
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: space-between;
 }
 
-#contactanos {
-  width: 400px;
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+footer form button {
+  background-color: #ffffff; /* Color de fondo */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Relleno */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
 }
 
-.nosotros-contenedor section {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#nosotros-historia p {
-  width: 1000px;
-  text-align: justify;
-}
-#nosotros-fundadores img {
-  width: 1000px;
-  object-fit: fill;
+.footer-izquierda .redes a {
+  width: fit-content;
+  height: fit-content;
 }
 
-#cartelera-funciones img, #tienda-funciones img {
-  width: 200px;
-  height: 200px;
+main section {
+  padding: 10px;
+  height: 20em;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+main section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+main section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.section-img-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-img-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.boton-redireccion {
+  height: fit-content;
+}
+
+.boton-section-control {
+  text-decoration: none;
+  font-weight: 600;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.carousel-section {
+  max-width: 100%;
+  overflow: hidden;
+}
+.carousel-control-prev {
+  height: 100%;
+}
+
+#mi-carrucel {
+  height: 100%;
+}
+.carousel-section .carousel-inner {
+  max-height: 500px;
+}
+
+.carousel-section .carousel-inner img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-#escuela-actividades img {
-  width: 400px;
-  height: 250px;
-  object-fit: cover;
+.card {
+  width: 18rem;
+  position: inherit;
+}
+#cartelera-funciones,
+#escuela-actividades,
+#tienda-actividades {
+  height: fit-content;
 }
 
-#escuela-actividades article, #cartelera-funciones article, #tienda-funciones article {
-  margin: 10px;
+.producto-descripcion-container {
+  padding: 1em;
+  width: fit-content;
+  background-color: rgb(115, 115, 115);
+  display: flex;
+  justify-content: center;
+}
+.producto-descripcion-container div:first-child {
+  width: 80%;
+  height: 100%;
 }
 
-.escuela-contenedor section,.cartelera-contenedor section, .tienda-contenedor section {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.producto-descripcion-container p {
+  /* background-color: rgb(136, 136, 136); */
+  color: #ffffff;
+  padding: 10px;
+  width: 80%;
+}
+
+.boton-principal {
+  background-color: chartreuse;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#escuela-actividades .card,
+#tienda-actividades .card {
+  width: 100%;
 }
