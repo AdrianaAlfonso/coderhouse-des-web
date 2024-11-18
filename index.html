@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>El Teatrino</title>
+  </head>
+
+  <body>
+    <!-- Cuerpo -->
+    <header>
+      <!-- Encabezado - Menu de Navegacion -->
+      <nav>
+        <a href="#" id="logo-header">
+          <!-- Logo a Inicio -->
+          <img src="./img/logoSinFondo.png" alt="Logo" />
+        </a>
+
+        <h1 class="titulo-principal">El Teatrino</h1>
+
+        <div class="boton-busqueda">
+          <!-- Barra de busqueda-->
+          <form class="boton-busqueda-form" action="#" method="post">
+            <input type="search" placeholder="Buscar" />
+          </form>
+        </div>
+
+        <a href="https://">
+          <!-- Carrito -->
+          <img src="./img/carrito.png" alt="carrito" />
+        </a>
+
+        <ul id="nav-secciones">
+          <!--- Secciones -->
+          <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
+          <li><a href="./pages/cartelera.html">CARTELERA</a></li>
+          <li><a href="./pages/escuela.html">ESCUELA</a></li>
+          <li><a href="./pages/tienda.html">TIENDA</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contenido principal -->
+
+      <section>
+        <!-- Calendario -->
+        <h2>CALENDARIO DE ACTIVIDADES Y FUNCIONES</h2>
+        <h3>MES</h3>
+
+        <a class="boton-redireccion" href="#contactanos">
+          <span>Reserva tu lugar</span>
+        </a>
+
+        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
+      </section>
+
+      <section>
+        <!-- Proximos estrenos -->
+        <h2>PROXIMAS FUNCIONES</h2>
+        <h3>NOMBRE DE LA OBRA</h3>
+        <a href="./pages/cartelera.html">
+          <img src="./img/cartelera.jpg" alt="Obra de Teatro X" />
+        </a>
+        <a class="boton-redireccion" href="./pages/cartelera.html">
+          <span>+ Info</span>
+        </a>
+
+        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
+      </section>
+
+      <section>
+        <!-- Actividades -->
+        <h2>ACTIVIDADES EDUCATIVAS</h2>
+        <h3>NOMBRE DE LA ACTIVIDAD</h3>
+        <a href="./pages/escuela.html">
+          <img src="./img/escuelaTeatro.jpg" alt="Actividad X" />
+        </a>
+        <a class="boton-redireccion" href="./pages/escuela.html">
+          <span>+ Info</span>
+        </a>
+
+        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
+      </section>
+
+      <section>
+        <!-- Tienda -->
+        <h2>PRODUCTOS DESTACADOS</h2>
+        <h3>NOMBRE DEL PRODUCTO</h3>
+        <a href="./pages/tienda.html">
+          <img src="./img/titere.jpg" alt="Producto X" />
+        </a>
+        <a class="boton-redireccion" href="./pages/tienda.html">
+          <span>Comprar</span>
+        </a>
+        <a class="boton-redireccion" href="./pages/tienda.html">
+          <span>ver todos los productos</span>
+        </a>
+
+        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
+      </section>
+
+      <section>
+        <!-- Ubicacion -->
+        <h2>UBICACION</h2>
+        <p>Direccion, Ciudad, Pais</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.1788593711053!2d-66.87980248757786!3d-29.42356844628383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbcc768a0915%3A0xb3556ab4aa50bc0e!2sEl%20teatrino%20espacio%20de%20teatro%20independiente!5e0!3m2!1ses-419!2sar!4v1729549325581!5m2!1ses-419!2sar"
+          width="800"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Pie -->
+      <section>
+        <div>
+          <a href="#" id="logo-footer">
+            <img src="../img/logoFondoNegro.png" alt="Logo" />
+          </a>
+          <h2 class="titulo-principal">El Teatrino</h2>
+        </div>
+
+        <div id="redes-footer">
+          <!-- Redes sociales -->
+
+          <a href="https://instagram.com" target="_blank">
+            <img src="./img/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <img src="./img/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <img src="./img/youtube.png" alt="Youtube" />
+          </a>
+          <a href="https://tiktok.com" target="_blank">
+            <img src="./img/tiktok.png" alt="Tiktok" />
+          </a>
+          <a href="https://web.whatsapp.com" target="_blank">
+            <img src="./img/whatsapp.png" alt="whatsapp" />
+          </a>
+        </div>
+      </section>
+
+      <section id="contactanos">
+        <h2>CONTACTANOS</h2>
+
+        <form method="post">
+          <div>
+            <input type="text" placeholder="Nombre" />
+            <input type="email" placeholder="Mail" />
+            <input type="text" placeholder="Numero de contacto" />
+          </div>
+          <div>
+            <input type="text" placeholder="Asunto" />
+            <input type="text" placeholder="Mensaje" />
+          </div>
+          <!-- boton enviar-->
+          <div>
+            <button type="">Enviar</button>
+          </div>
+          
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>

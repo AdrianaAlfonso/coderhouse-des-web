@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+h2 {
+  color: grey;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  color: black;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.titulo-principal {
+  color: black;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#nav-secciones {
+  display: flex;
+  gap: 20px;
+}
+
+#nav-secciones a {
+  color: black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+}
+
+#logo-header img, #logo-footer img  {
+  width: 300px;
+  height: 300px;
+}
+
+#redes-footer img {
+  width: 50px;
+  height: 50px;
+}
+
+main img {
+  width: 1000px;
+  object-fit: fill;
+}
+
+iframe {
+  width: 1000px;
+}
+
+footer {
+  width: 1000px;
+  background-color: grey;
+}
+
+header {
+  width: 1000px;
+  background-color: grey;
+}
+
+#contactanos {
+  width: 400px;
+}
+
+.nosotros-contenedor section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#nosotros-historia p {
+  width: 1000px;
+  text-align: justify;
+}
+#nosotros-fundadores img {
+  width: 1000px;
+  object-fit: fill;
+}
+
+#cartelera-funciones img, #tienda-funciones img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#escuela-actividades img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#escuela-actividades article, #cartelera-funciones article, #tienda-funciones article {
+  margin: 10px;
+}
+
+.escuela-contenedor section,.cartelera-contenedor section, .tienda-contenedor section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
