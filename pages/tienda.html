@@ -6,11 +6,19 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
+    <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/b9fbd9565a.js"
       crossorigin="anonymous"></script>
@@ -21,241 +29,328 @@
     <!-- Cuerpo -->
     <header>
       <!-- Encabezado - Menu de Navegacion -->
-      <nav class="d-flex">
-        <div class="d-flex nav-izquierda align-items-center">
-          <a href="../index.html" class="position-relative">
-            <!-- Logo a Inicio -->
-            <img src="../img/logoSinFondo.png" alt="Logo" />
+      <div class="encabezado">
+        <div class="encabezado-superior">
+          <!-- Barra de busqueda-->
+          <form role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search" />
+          </form>
+
+          <a href="#" class="enlace-icono">
+            <!-- Carrito -->
+            <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
-
-        <div class="nav-derecha d-flex flex-column justify-content-between">
-          <div class="d-flex container-fluid">
-            <div class="boton-busqueda container-fluid">
-              <!-- Barra de busqueda-->
-              <form class="boton-busqueda-form" action="#" method="post">
-                <input
-                  type="search"
-                  class="form-control"
-                  placeholder="Buscar" />
-              </form>
-            </div>
-
-            <div class="boton-carrito-container">
-              <a href="#">
-                <!-- Carrito -->
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
-            </div>
+        <div class="encabezado-inferior">
+          <div class="encabezado-inferior-logos">
+            <a href="../index.html" class="encabezado-inferior-logos-imagen">
+              <!-- Logo a Inicio -->
+              <img src="../assets/images/logoSinFondo.png" alt="Logo" />
+            </a>
+            <a class="encabezado-inferior-logos-logo" href="../index.html"
+              >El Teatrino</a
+            >
           </div>
 
-          <ul class="d-flex justify-content-between roboto-bold">
-            <!--- Secciones -->
-            <li><a href="./nosotros.html">NOSOTROS</a></li>
-            <li><a href="./cartelera.html">CARTELERA</a></li>
-            <li><a href="./escuela.html">ESCUELA</a></li>
-            <li><a href="./tienda.html">TIENDA</a></li>
-          </ul>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <!--- Secciones -->
+                  <li class="nav-item">
+                    <a href="./nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./cartelera.html">CARTELERA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./escuela.html">ESCUELA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./tienda.html">TIENDA</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-      <div class="nav-image-container">
-        <img src="../img/no-image.png" alt="Teatro" />
+      </div>
+      <div class="imagen-container">
+        <img src="../assets/images/encabezados/tienda.png" alt="niñotitere" />
       </div>
     </header>
 
-    <main class="tienda-contenedor">
-      <section>
-        <!-- Tienda -->
-        <h2>Nombre de Producto</h2>
-        <div class="section-img-container">
-          <a href="./tienda.html">
-            <img src="../img/no-image.png" alt="Producto X" />
-          </a>
-        </div>
-        <div
-          class="producto-descripcion-container"
-          style="background-color: white">
-          <div>
-            <p style="color: black; background-color: lightgray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              velit soluta ad tempore illum, et sed, sit molestiae debitis
-              aliquam, fugit at voluptates dignissimos assumenda. Officia
-              suscipit voluptates assumenda odio.
-            </p>
-          </div>
-          <div class="d-flex gap-4 flex-column">
-            <div class="d-flex gap-4" style="color: white">
-              <input type="text" class="form-control" placeholder="cantidad" />
+    <main>
+      <div id="carousel-acti-educ" class="carousel slide">
+        <div class="carousel-inner carousel-actividades">
+          <div class="carousel-item active">
+            <div class="carousel-imagen-container">
+              <img src="../assets/images/funciones/funcion1.png" alt="..." />
             </div>
-            <div>
-              <button type="button" class="btn btn-primary">
-                Comprar Entrada
-              </button>
+            <div class="carousel-info">
+              <p>
+                Veni a aventurarte en esta obra que te llevará a los pasadizos
+                más oscuros de la mente, donde la realidad se desvanece y la
+                imaginación se convierte en tu única guía. En este laberinto de
+                sombras, donde la luz apenas se filtra, te encontrarás cara a
+                cara con tus propios miedos y deseos. ¿Estás preparado para
+                enfrentar la verdad que se esconde en las profundidades de tu
+                propia mente?
+              </p>
+              <div class="carousel-horarios">
+                <ul>
+                  <li><span>Fecha</span><span>Horarios</span></li>
+                  <li><span>05/01/2025</span><span>18hs</span></li>
+                  <li><span>06/01/2025</span><span>21hs</span></li>
+                  <li><span>08/01/2025</span><span>14hs</span></li>
+                </ul>
+                <!-- boton para comprar entrada con enlace a whatsapp -->
+                <a
+                  href="https://api.whatsapp.com/send?phone=+543804391588&text=Hola+quiero+comprar+una+entrada+para+la+funcion+%22Entropia%22+%F0%9F%A4%A9%F0%9F%A4%A9"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Comprar Entrada</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-imagen-container">
+              <img src="../assets/images/funciones/funcion2.png" alt="..." />
+            </div>
+            <div class="carousel-info">
+              <p>
+                <strong>Entre Risas</strong> es un espectáculo único que combina
+                la magia del circo con el encanto del humor para crear una
+                experiencia inolvidable para toda la familia. Malabares,
+                acrobacias y ocurrencias hilarantes se entrelazan en un show
+                lleno de energía, donde grandes y chicos podrán reír, soñar y
+                maravillarse juntos. ¡Una invitación a dejarse llevar por la
+                alegría y a redescubrir el poder de la risa!
+              </p>
+
+              <div class="carousel-horarios">
+                <ul>
+                  <li><span>Fecha</span><span>Horarios</span></li>
+                  <li><span>10/01/2025</span><span>17hs</span></li>
+                  <li><span>12/01/2025</span><span>19hs</span></li>
+                  <li><span>15/01/2025</span><span>16hs</span></li>
+                </ul>
+                <!-- boton para comprar entrada con enlace a whatsapp -->
+                <a
+                  href="https://api.whatsapp.com/send?phone=+543804391588&text=Hola+quiero+comprar+una+entrada+para+la+funcion+%22Entre+Risas%22+%F0%9F%A4%A9%F0%9F%A4%A9"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Comprar Entrada</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
-      </section>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-acti-educ"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-acti-educ"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <div
         class="d-flex justify-content-center"
         style="background-color: rgb(109, 231, 255)">
         <h3 class="roboto-medium">Promociones</h3>
       </div>
-      <section id="tienda-actividades">
-        <h2>TODAS LAS ACTIVIDADES</h2>
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="../img/no-image.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Nombre</h5>
-                  <p class="card-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore voluptas distinctio consectetur doloremque!
-                    Perspiciatis aspernatur nostrum facilis illum sapiente iste!
-                  </p>
-                  <a href="#" class="btn btn-primary">+ Info</a>
-                </div>
-              </div>
+      <section>
+        <h3>CARTELERA</h3>
+        <div class="cartelera-tablero">
+          <a class="card" href="#" target="_blank">
+            <div class="card-header">
+              <h5 class="card-title">Titeres hermanas</h5>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="../img/no-image.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Nombre</h5>
-                  <p class="card-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore voluptas distinctio consectetur doloremque!
-                    Perspiciatis aspernatur nostrum facilis illum sapiente iste!
-                  </p>
-                  <a href="#" class="btn btn-primary">+ Info</a>
-                </div>
+            <div class="card-body">
+              <img
+                src="../assets/images/tienda/producto1.png"
+                class="card-img-top"
+                alt="titeres-producto-1" />
+              <div class="card-precios">
+                <p>
+                  <span class="card-precio-actual">$15.240</span>
+                  <span class="card-precio-anterior">$25.240</span>
+                </p>
               </div>
+              <p>
+                <span class="card-plan-pago">9 x 1.693,33 sin interés</span>
+              </p>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="../img/no-image.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Nombre</h5>
-                  <p class="card-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore voluptas distinctio consectetur doloremque!
-                    Perspiciatis aspernatur nostrum facilis illum sapiente iste!
-                  </p>
-                  <a href="#" class="btn btn-primary">+ Info</a>
-                </div>
+          </a>
+          <a class="card" href="#" target="_blank">
+            <div class="card-header">
+              <h5 class="card-title">Entre Risas</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="../assets/images/tienda/producto2.jpg"
+                class="card-img-top"
+                alt="..." />
+
+              <div class="card-precios">
+                <p>
+                  <span class="card-precio-actual">$15.240</span>
+                  <span class="card-precio-anterior">$25.240</span>
+                </p>
               </div>
+              <p>
+                <span class="card-plan-pago">9 x 1.693,33 sin interés</span>
+              </p>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="../img/no-image.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Nombre</h5>
-                  <p class="card-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore voluptas distinctio consectetur doloremque!
-                    Perspiciatis aspernatur nostrum facilis illum sapiente iste!
-                  </p>
-                  <a href="#" class="btn btn-primary">+ Info</a>
-                </div>
+          </a>
+          <a class="card" href="#" target="_blank">
+            <div class="card-header">
+              <h5 class="card-title">Fantastico</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="../assets/images/tienda/producto3.png"
+                class="card-img-top"
+                alt="..." />
+
+              <div class="card-precios">
+                <p>
+                  <span class="card-precio-actual">$15.240</span>
+                  <span class="card-precio-anterior">$25.240</span>
+                </p>
               </div>
+              <p>
+                <span class="card-plan-pago">9 x 1.693,33 sin interés</span>
+              </p>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="../img/no-image.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Nombre</h5>
-                  <p class="card-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore voluptas distinctio consectetur doloremque!
-                    Perspiciatis aspernatur nostrum facilis illum sapiente iste!
-                  </p>
-                  <a href="#" class="btn btn-primary">+ Info</a>
-                </div>
+          </a>
+          <a class="card" href="#" target="_blank">
+            <div class="card-header">
+              <h5 class="card-title">Juguemos a la Huerta</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="../assets/images/tienda/producto4.png"
+                class="card-img-top"
+                alt="..." />
+
+              <div class="card-precios">
+                <p>
+                  <span class="card-precio-actual">$15.240</span>
+                  <span class="card-precio-anterior">$25.240</span>
+                </p>
               </div>
+              <p>
+                <span class="card-plan-pago">9 x 1.693,33 sin interés</span>
+              </p>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="../img/no-image.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Nombre</h5>
-                  <p class="card-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore voluptas distinctio consectetur doloremque!
-                    Perspiciatis aspernatur nostrum facilis illum sapiente iste!
-                  </p>
-                  <a href="#" class="btn btn-primary">+ Info</a>
-                </div>
+          </a>
+          <a class="card" href="#" target="_blank">
+            <div class="card-header">
+              <h5 class="card-title">Lunas de aquí y de allá</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="../assets/images/tienda/producto5.png"
+                class="card-img-top"
+                alt="..." />
+
+              <div class="card-precios">
+                <p>
+                  <span class="card-precio-actual">$15.240</span>
+                  <span class="card-precio-anterior">$25.240</span>
+                </p>
               </div>
+              <p>
+                <span class="card-plan-pago">9 x 1.693,33 sin interés</span>
+              </p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
-      <div
-        class="d-flex justify-content-center"
-        style="background-color: rgb(109, 231, 255)">
-        <h3 class="roboto-medium">Formas de pago - Envios</h3>
-      </div>
     </main>
 
-    <footer class="d-flex container-fluid pt-4">
-      <!-- Pie -->
-      <section class="d-flex flex-column footer-izquierda">
-        <div class="d-flex align-items-center logo-footer">
-          <a href="../index.html">
-            <img src="../img/logoSinFondo.png" alt="Logo" />
+    <footer>
+      <div class="footer-superior">
+        <div class="footer-izquierda">
+          <a href="../index.html" class="footer-izquierda-imagen">
+            <!-- Logo a Inicio -->
+            <img src="../assets/images/logoSinFondo.png" alt="Logo" />
           </a>
+          <a href="../index.html" class="footer-izquierda-logo">El Teatrino</a>
         </div>
-        <div class="redes">
-          <!-- Redes sociales -->
-          <a href="https://instagram.com" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://facebook.com" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://youtube.com" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a href="https://tiktok.com" target="_blank">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
-          <a href="https://web.whatsapp.com" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
+        <div class="footer-derecha">
+          <h3>CONTACTANOS</h3>
+          <form>
+            <div class="form-group-row">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Correo Electronico" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Telefono" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Asunto" />
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Mensaje"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
-      </section>
-
-      <section class="">
-        <h2 class="fs-5 roboto-bold">CONTACTANOS</h2>
-
-        <form method="post">
-          <div class="form-grid">
-            <div>
-              <input type="text" class="form-control" placeholder="Nombre" />
-              <input type="email" class="form-control" placeholder="Mail" />
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Numero de contacto" />
-            </div>
-            <div>
-              <input type="text" class="form-control" placeholder="Asunto" />
-              <textarea
-                name="mensaje"
-                class="form-control"
-                placeholder="Mensaje"></textarea>
-            </div>
-          </div>
-          <!-- boton enviar-->
-          <div class="mt-2 d-flex justify-content-end">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-      </section>
+      </div>
+      <div class="footer-inferior">
+        <ul>
+          <li>
+            <a href="#" class="enlace-icono">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="enlace-icono">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="enlace-icono">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
