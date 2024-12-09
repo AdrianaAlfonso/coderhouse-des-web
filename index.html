@@ -6,12 +6,19 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
+    <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/b9fbd9565a.js"
       crossorigin="anonymous"></script>
@@ -23,188 +30,224 @@
     <!-- Cuerpo -->
     <header>
       <!-- Encabezado - Menu de Navegacion -->
-      <nav class="d-flex">
-        <div class="d-flex nav-izquierda align-items-center">
-          <a href="#" class="position-relative">
-            <!-- Logo a Inicio -->
-            <img src="./img/logoSinFondo.png" alt="Logo" />
+      <div class="encabezado">
+        <div class="encabezado-superior">
+          <!-- Barra de busqueda-->
+          <form role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search" />
+          </form>
+
+          <a href="#" class="enlace-icono">
+            <!-- Carrito -->
+            <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
-
-        <div class="d-flex flex-column justify-content-between w-50 pt-4">
-          <div class="d-flex w-100 flex-column flex-md-row align-items-end">
-            <div class="boton-busqueda w-100">
-              <!-- Barra de busqueda-->
-              <form class="boton-busqueda-form" action="#" method="post">
-                <input
-                  type="search"
-                  class="form-control"
-                  placeholder="Buscar" />
-              </form>
-            </div>
-
-            <div class="boton-carrito-container">
-              <a href="#">
-                <!-- Carrito -->
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
-            </div>
+        <div class="encabezado-inferior">
+          <div class="encabezado-inferior-logos">
+            <a href="#" class="encabezado-inferior-logos-imagen">
+              <!-- Logo a Inicio -->
+              <img src="./assets/images/logoSinFondo.png" alt="Logo" />
+            </a>
+            <a class="encabezado-inferior-logos-logo" href="#">El Teatrino</a>
           </div>
 
-          <ul class="d-none d-md-flex justify-content-between roboto-bold">
-            <!--- Secciones -->
-            <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-            <li><a href="./pages/cartelera.html">CARTELERA</a></li>
-            <li><a href="./pages/escuela.html">ESCUELA</a></li>
-            <li><a href="./pages/tienda.html">TIENDA</a></li>
-          </ul>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <!--- Secciones -->
+                  <li class="nav-item">
+                    <a href="./pages/nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/cartelera.html">CARTELERA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/escuela.html">ESCUELA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/tienda.html">TIENDA</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-      <div class="nav-image-container">
-        <img src="./img/no-image.png" alt="Teatro" />
+      </div>
+      <div class="imagen-container">
+        <img src="./assets/images/encabezados/index.jpg" alt="Teatro" />
       </div>
     </header>
 
     <main>
-      <!-- Contenido principal -->
-
       <section>
-        <!-- Calendario -->
-        <h2>CALENDARIO DE ACTIVIDADES Y FUNCIONES</h2>
-        <h3>MES</h3>
-        <div class="section-img-container">
-          <a href="#">
-            <img src="./img/image.png" alt="Actividad X" />
-          </a>
-        </div>
-        <a class="boton-section-control" href="./pages/escuela.html">
-          <span>Reserva tu lugar</span>
-        </a>
-        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
-      </section>
-
-      <section>
-        <!-- Proximos estrenos -->
-        <h2>PROXIMAS FUNCIONES</h2>
-        <h3>NOMBRE DE LA OBRA</h3>
-        <div class="section-img-container">
-          <a href="./pages/cartelera.html">
-            <img src="./img/cartelera.jpg" alt="Obra de Teatro X" />
-          </a>
-        </div>
-        <a class="boton-section-control" href="./pages/cartelera.html">
-          <span>+ Info</span>
-        </a>
-
-        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
-      </section>
-
-      <section>
-        <!-- Actividades -->
-        <h2>ACTIVIDADES EDUCATIVAS</h2>
-        <h3>NOMBRE DE LA ACTIVIDAD</h3>
-        <div class="section-img-container">
-          <a href="./pages/escuela.html">
-            <img src="./img/escuelaTeatro.jpg" alt="Actividad X" />
-          </a>
-        </div>
-        <a class="boton-section-control" href="./pages/escuela.html">
-          <span>+ Info</span>
-        </a>
-
-        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
-      </section>
-
-      <section>
-        <!-- Tienda -->
-        <h2>PRODUCTOS DESTACADOS</h2>
-        <h3>NOMBRE DEL PRODUCTO</h3>
-        <div class="section-img-container">
-          <a href="./pages/tienda.html">
-            <img src="./img/titere.jpg" alt="Producto X" />
-          </a>
-        </div>
-        <div class="d-flex gap-2">
-          <a class="boton-section-control" href="./pages/tienda.html">
-            Ver todos los productos
-          </a>
-        </div>
-
-        <!-- FALTA BOTON PARA PASAR AL SIGUIENTE CARTEL -->
-      </section>
-
-      <section>
-        <!-- Ubicacion -->
-        <h2>UBICACION</h2>
-        <p>Direccion, Ciudad, Pais</p>
-        <div class="section-img-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.1788593711053!2d-66.87980248757786!3d-29.42356844628383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbcc768a0915%3A0xb3556ab4aa50bc0e!2sEl%20teatrino%20espacio%20de%20teatro%20independiente!5e0!3m2!1ses-419!2sar!4v1729549325581!5m2!1ses-419!2sar"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3>PRÓXIMAS FUNCIONES</h3>
+        <div id="carousel-nuev-func" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-imagen-container">
+                <img src="./assets/images/funciones/funcion1.png" alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-imagen-container">
+                <img src="./assets/images/funciones/funcion2.png" alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-imagen-container">
+                <img src="./assets/images/funciones/funcion3.png" alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-imagen-container">
+                <img src="./assets/images/funciones/funcion4.png" alt="..." />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-nuev-func"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-nuev-func"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
+      <section>
+        <h3>ACTIVIDADES EDUCATIVAS</h3>
+        <div id="carousel-acti-educ" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-imagen-container">
+                <img
+                  src="./assets/images/actividades/actividad1.jpeg"
+                  alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-imagen-container">
+                <img
+                  src="./assets/images/actividades/actividad2.png"
+                  alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-imagen-container">
+                <img
+                  src="./assets/images/actividades/actividad3.jpeg"
+                  alt="..." />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-acti-educ"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-acti-educ"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <div class="container-fluid">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2066.543839091723!2d-66.85999303482338!3d-29.414220118935248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbca815d6141%3A0xdee6a711b2534a05!2sRivadavia%20759%2C%20F5300%20La%20Rioja!5e0!3m2!1ses-419!2sar!4v1731781911692!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </main>
 
-    <footer class="d-flex container-fluid pt-4">
-      <!-- Pie -->
-      <section class="d-flex flex-column footer-izquierda">
-        <div class="d-flex align-items-center logo-footer">
-          <a href="#">
-            <img src="./img/logoSinFondo.png" alt="Logo" />
+    <footer>
+      <div class="footer-superior">
+        <div class="footer-izquierda">
+          <a href="#" class="footer-izquierda-imagen">
+            <!-- Logo a Inicio -->
+            <img src="./assets/images/logoSinFondo.png" alt="Logo" />
           </a>
+          <a class="footer-izquierda-logo" href="#">El Teatrino</a>
         </div>
-        <div class="redes">
-          <!-- Redes sociales -->
-          <a href="https://instagram.com" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://facebook.com" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://youtube.com" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a href="https://tiktok.com" target="_blank">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
-          <a href="https://web.whatsapp.com" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
+        <div class="footer-derecha">
+          <h3>CONTACTANOS</h3>
+          <form>
+            <div class="form-group-row">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Correo Electronico" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Telefono" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Asunto" />
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Mensaje"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
-      </section>
-
-      <section class="">
-        <h2 class="fs-5 roboto-bold">CONTACTANOS</h2>
-
-        <form method="post">
-          <div class="form-grid">
-            <div>
-              <input type="text" class="form-control" placeholder="Nombre" />
-              <input type="email" class="form-control" placeholder="Mail" />
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Numero de contacto" />
-            </div>
-            <div>
-              <input type="text" class="form-control" placeholder="Asunto" />
-              <textarea
-                name="mensaje"
-                class="form-control"
-                placeholder="Mensaje"></textarea>
-            </div>
-          </div>
-          <!-- boton enviar-->
-          <div class="mt-2 d-flex justify-content-end">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-      </section>
+      </div>
+      <div class="footer-inferior">
+        <ul>
+          <li>
+            <a href="#" class="enlace-icono">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="enlace-icono">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="enlace-icono">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
